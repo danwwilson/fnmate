@@ -124,7 +124,7 @@ write_fn_file <- function(fn_name, fn_defn, fn_folder = getOption("fnmate_folder
   readr::write_file(x = fn_defn, file = target_file)
   message(cli::format_message(c(
     " " = "",
-    "v" = "fnmate Wrote {col_green(target_file)}")))
+    "v" = "fnmate Wrote {cli::col_green(target_file)}")))
   .fnmate_env$previous_call <- NULL
 
   invisible(target_file)
