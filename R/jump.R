@@ -66,7 +66,7 @@ ripgrep <- function(fn_name) {
   warning(cli::format_warning(c(
     " " = "",
     "!" =  "There were {length(result)} files with the function {.fn {fn_name}} identified to return",
-    "!" = "The files identified are {.pkg {all_files}}",
+    "!" = "The files identified are {cli::col_red({all_files})}",
     "v" = "Opening {cli::col_green(selected_components[[1]])}"
   )))
 
@@ -120,7 +120,7 @@ git_grep <- function(fn_name) {
   warning(cli::format_warning(c(
     " " = "",
     "!" =  "There were {length(result)} files with the function {.code {fn_name}} identified to return",
-    "!" = "The files identified are {.pkg {all_files}}",
+    "!" = "The files identified are {cli::col_red({all_files})}",
     "v" = "Opening {cli::col_green(selected_components[[1]])}"
   )))
 
