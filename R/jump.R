@@ -67,7 +67,7 @@ ripgrep <- function(fn_name) {
     " " = "",
     "!" =  "There were {length(result)} files with the function {.fn {fn_name}} identified to return",
     "!" = "The files identified are {cli::col_red({all_files})}",
-    "v" = "Opening {cli::col_green(selected_components[[1]])}"
+    "v" = "Opening {cli::col_yellow(selected_components[[1]])}"
   )))
 
   list(
@@ -121,7 +121,7 @@ git_grep <- function(fn_name) {
     " " = "",
     "!" =  "There were {length(result)} files with the function {.code {fn_name}} identified to return",
     "!" = "The files identified are {cli::col_red({all_files})}",
-    "v" = "Opening {cli::col_green(selected_components[[1]])}"
+    "v" = "Opening {cli::col_yellow(selected_components[[1]])}"
   )))
 
   list(
